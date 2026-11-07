@@ -1,0 +1,5 @@
+step,rows before,rows after,rows removed
+drop market_segment = Undefined,119390,119388,2
+drop bookings with 0 guests,119388,119208,180
+drop negative ADR and the single 5400 EUR outlier,119208,119206,2
+TOTAL,119390,119206,184

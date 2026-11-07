@@ -1,0 +1,50 @@
+{
+  "best_model": "Random Forest",
+  "threshold": 0.3,
+  "test_at_threshold": {
+    "accuracy": 0.776,
+    "precision": 0.7144,
+    "recall": 0.7024,
+    "f1": 0.7084,
+    "roc_auc": 0.843,
+    "pr_auc": 0.7998
+  },
+  "confusion_matrix": [
+    [
+      20468,
+      4417
+    ],
+    [
+      4683,
+      11051
+    ]
+  ],
+  "net_value_test_model_eur": 2059900,
+  "net_value_test_rule_eur": 1443177,
+  "n_train": 78587,
+  "n_test": 40619,
+  "cancel_rate_train": 0.3622,
+  "cancel_rate_test": 0.3874,
+  "threshold_sensitivity": [
+    {
+      "FP cost (% of booking)": 5,
+      "best threshold": 0.12
+    },
+    {
+      "FP cost (% of booking)": 10,
+      "best threshold": 0.18
+    },
+    {
+      "FP cost (% of booking)": 20,
+      "best threshold": 0.3
+    },
+    {
+      "FP cost (% of booking)": 35,
+      "best threshold": 0.42
+    },
+    {
+      "FP cost (% of booking)": 50,
+      "best threshold": 0.46
+    }
+  ]
+}
