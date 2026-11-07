@@ -17,10 +17,8 @@ hotel-booking-cancellation/
 │   ├── 03_eda.ipynb                 10 question-driven charts
 │   └── 04_modeling.ipynb            baseline → LR → tree → RF / GB, evaluation, interpretation
 ├── reports/
-│   ├── final_report.pdf             the report (source: final_report.md)
-│   ├── figures/                     every chart used in the report
-│   └── results_*.csv, key_results.json   result tables written by notebook 04
-├── src/build_report.py              final_report.md → PDF (needs Google Chrome)
+│   ├── final_report.pdf             the full report
+│   └── figures/                     every chart used in the report
 └── requirements.txt
 ```
 
@@ -51,9 +49,3 @@ python3 -m venv .venv
 Run the notebooks in order (01 → 04). Notebook 02 writes the clean CSV that 03 and 04 read. Notebook 04 takes about 3–5 minutes on a laptop. All randomness uses seed 42, and every number in the report comes from these notebooks. There was no manual editing of the data.
 
 **Google Colab:** upload the `notebooks/` and `data/` folders and keep the same layout. Notebooks read `../data/...` and write to `../reports/...`.
-
-To rebuild the PDF after editing `reports/final_report.md`:
-
-```bash
-.venv/bin/python src/build_report.py
-```

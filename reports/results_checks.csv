@@ -1,6 +1,0 @@
-check,test ROC-AUC,test PR-AUC
-Main model (time split),0.843,0.8
-WITH leaky columns (room/parking/changes) — not usable,0.864,0.819
-Without country features,0.822,0.781
-De-duplicated data,0.783,0.615
-Random 70/30 split (duplicates can leak),0.941,0.92

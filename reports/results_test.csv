@@ -1,7 +1,0 @@
-model,accuracy,precision,recall,f1,roc_auc,pr_auc
-Baseline (always 'not canceled'),0.613,0.0,0.0,0.0,0.5,0.387
-Business rule (NonRefund / lead>90 / prev. cancel),0.626,0.513,0.671,0.582,0.635,0.472
-Logistic Regression,0.76,0.81,0.496,0.615,0.837,0.797
-Decision Tree (depth 8),0.767,0.755,0.591,0.663,0.825,0.762
-Random Forest,0.766,0.793,0.537,0.64,0.843,0.8
-Gradient Boosting,0.769,0.779,0.563,0.654,0.841,0.799
